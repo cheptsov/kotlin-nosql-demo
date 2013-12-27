@@ -1,13 +1,13 @@
 buildscript {
-    kotlin_version = '0.6.1673'
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:0.6.1673"
     }
 }
 
+apply plugin:'java'
 apply plugin:'kotlin'
 apply plugin:'application'
 
@@ -17,13 +17,14 @@ applicationName = "app"
 repositories {
     mavenCentral()
     maven {
-        url 'http://repo.spring.io/snapshot'
+        url "http://repo.spring.io/libs-snapshot"
     }
 }
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web:0.5.0.BUILD-SNAPSHOT")
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile("org.springframework.boot:spring-boot-starter-web:0.5.0.M6")
+    compile("org.thymeleaf:thymeleaf-spring3:2.0.17")
+    compile "org.jetbrains.kotlin:kotlin-stdlib:0.6.1673"
     compile 'com.amazonaws:aws-java-sdk:1.3.25'
     testCompile 'junit:junit:4.11'
     compile files('libs/Exposed.jar')

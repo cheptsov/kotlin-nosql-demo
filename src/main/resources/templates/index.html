@@ -1,0 +1,57 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en-US">
+    <head>
+        <meta charset="UTF-8"/>
+
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <title>Users</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Users</h1>
+
+            <form method="post" action="add" role="form">
+                <div class="form-group">
+                    <label for="fullName">Name:</label>
+                    <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Full Name"
+                           required="true"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" class="form-control" placeholder="Email"
+                           required="true"/>
+                </div>
+                <button type="submit" class="btn btn-success">Add User</button>
+            </form>
+
+            <br/>
+
+            <table class="table table-bordered table-striped" th:if="${not users.isEmpty()}">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="user: ${users}">
+                        <td th:text="${user.component2()}"></td>
+                        <td th:text="${user.component1()}"></td>
+                        <td>
+                            <form action="delete" method="post"><input type="submit"
+                                                                       class="btn btn-danger btn-xs"
+                                                                       value="Delete"/>
+                                <input type="hidden" name="email" th:value="${user.component1()}"/>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

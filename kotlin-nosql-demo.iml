@@ -26,31 +26,34 @@
     <orderEntry type="library" exported="" name="Gradle: httpcore-4.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: httpclient-4.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: Exposed" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-boot-autoconfigure-0.5.0.BUILD-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-annotations-2.3.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: tomcat-embed-core-7.0.47" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: tomcat-embed-logging-juli-7.0.47" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: ognl-3.0.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: thymeleaf-spring3-2.0.17" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: javassist-3.16.1-GA" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: thymeleaf-2.0.17" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jul-to-slf4j-1.7.5" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-databind-2.3.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: log4j-over-slf4j-1.7.5" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-logging-0.5.0.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" exported="" name="Gradle: aopalliance-1.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-context-4.0.0.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: slf4j-api-1.7.5" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-aop-4.0.0.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-beans-4.0.0.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-webmvc-4.0.0.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jcl-over-slf4j-1.7.5" level="project" />
     <orderEntry type="library" exported="" name="Gradle: logback-classic-1.0.13" level="project" />
     <orderEntry type="library" exported="" name="Gradle: logback-core-1.0.13" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-web-0.5.0.BUILD-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-web-4.0.0.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-0.5.0.BUILD-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-expression-4.0.0.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-core-4.0.0.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-tomcat-0.5.0.BUILD-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-core-2.3.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: spring-boot-0.5.0.BUILD-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-0.5.0.M6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-0.5.0.M6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-web-0.5.0.M6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-core-4.0.0.RC1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-databind-2.2.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-tomcat-0.5.0.M6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-expression-4.0.0.RC1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-webmvc-4.0.0.RC1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-logging-0.5.0.M6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-web-4.0.0.RC1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-beans-4.0.0.RC1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-core-2.2.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-aop-4.0.0.RC1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tomcat-embed-core-7.0.42" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-annotations-2.2.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-context-4.0.0.RC1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-autoconfigure-0.5.0.M6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tomcat-embed-logging-juli-7.0.42" level="project" />
   </component>
 </module>
 
