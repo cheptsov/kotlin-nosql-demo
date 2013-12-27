@@ -17,5 +17,6 @@ public class SampleController {
 }
 
 fun main(args: Array<String>) {
+    System.setProperty("server.port", System.getProperty("PORT", "8080")!!.makeString())
     SpringApplication.run(array(javaClass<SampleController>()), args);
 }
