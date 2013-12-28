@@ -20,7 +20,7 @@ object Users: Table() {
 
 Controller
 public class SampleController {
-    val db = DynamoDB()
+    val db = DynamoDB(System.getenv("AWS_KEY")!!, System.getenv("AWS_SECRET")!!)
 
     PostConstruct
     fun onStart() {

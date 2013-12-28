@@ -10,10 +10,7 @@ class Application {
 }
 
 fun main(args: Array<String>) {
-    val port = System.getenv("PORT")
-    if (port != null) {
-        System.setProperty("server.port", port)
-    }
+    System.setProperty("server.port", System.getenv("PORT")!!)
     SpringApplication.run(array(javaClass<Application>()), args)
 }
 
