@@ -27,7 +27,7 @@ public class SampleController {
         db {
             Users.create()
 
-            Users columns { all } insert { values("andrey.cheptsov@gmail.com", "Andrey Cheptsov") }
+            Users attrs { all } put { values("andrey.cheptsov@gmail.com", "Andrey Cheptsov") }
         }
     }
 
@@ -42,7 +42,7 @@ public class SampleController {
     public fun add(RequestParam("email", required = true) emailParam: String,
                        RequestParam("fullName") fullNameParam: String): String {
         db {
-            Users columns { all } insert { values(emailParam, fullNameParam) }
+            Users attrs { all } put { values(emailParam, fullNameParam) }
         }
         // save
         return "redirect:/";
@@ -51,7 +51,7 @@ public class SampleController {
     RequestMapping(array("delete"), method = array(RequestMethod.POST))
     fun deleteUser(RequestParam("email") emailParam: String): String {
         db {
-            Users delete { email eq emailParam }
+            Users filter { email eq emailParam }
         }
         return "redirect:/";
     }
@@ -59,7 +59,7 @@ public class SampleController {
     RequestMapping(array("/"))
     fun index(model: Model): String {
         db {
-            model.addAttribute("users", Users columns { all } map { email, fullName -> Pair(email, fullName)});
+            model.addAttribute("users", Users attrs { all } map { email, fullName -> Pair(email, fullName)});
         }
         return "index"
     }

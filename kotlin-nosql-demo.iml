@@ -25,7 +25,6 @@
     <orderEntry type="library" exported="" name="Gradle: kotlin-runtime-0.6.1673" level="project" />
     <orderEntry type="library" exported="" name="Gradle: httpcore-4.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: httpclient-4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: Exposed" level="project" />
     <orderEntry type="library" exported="" name="Gradle: ognl-3.0.6" level="project" />
     <orderEntry type="library" exported="" name="Gradle: thymeleaf-spring3-2.0.17" level="project" />
     <orderEntry type="library" exported="" name="Gradle: javassist-3.16.1-GA" level="project" />
@@ -54,6 +53,7 @@
     <orderEntry type="library" exported="" name="Gradle: spring-context-4.0.0.RC1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: spring-boot-autoconfigure-0.5.0.M6" level="project" />
     <orderEntry type="library" exported="" name="Gradle: tomcat-embed-logging-juli-7.0.42" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: kotlin-nosql-0.1-SNAPSHOT" level="project" />
   </component>
 </module>
 
