@@ -49,9 +49,9 @@ public class SampleController {
     }
 
     RequestMapping(array("delete"), method = array(RequestMethod.POST))
-    fun deleteUser(RequestParam("email") emailParam: String): String {
+    fun delete(RequestParam("email") emailParam: String): String {
         db {
-            Users filter { email eq emailParam }
+            Users filter { email eq emailParam } delete { }
         }
         return "redirect:/";
     }
