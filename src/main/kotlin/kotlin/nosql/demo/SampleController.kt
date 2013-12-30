@@ -27,7 +27,7 @@ public class SampleController {
         db {
             Users.create()
 
-            Users attrs { all } put { values("andrey.cheptsov@gmail.com", "Andrey Cheptsov") }
+            Users attrs { all } set { values("andrey.cheptsov@gmail.com", "Andrey Cheptsov") }
         }
     }
 
@@ -42,7 +42,7 @@ public class SampleController {
     public fun add(RequestParam("email", required = true) emailParam: String,
                        RequestParam("fullName") fullNameParam: String): String {
         db {
-            Users attrs { all } put { values(emailParam, fullNameParam) }
+            Users attrs { all } set { values(emailParam, fullNameParam) }
         }
         // save
         return "redirect:/";
