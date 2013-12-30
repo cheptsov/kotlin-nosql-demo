@@ -24,11 +24,13 @@ public class SampleController {
 
     PostConstruct
     fun onStart() {
-        db {
-            Users.create()
+        Thread {
+            db {
+                Users.create()
 
-            Users attrs { all } set { values("andrey.cheptsov@gmail.com", "Andrey Cheptsov") }
-        }
+                Users attrs { all } set { values("andrey.cheptsov@gmail.com", "Andrey Cheptsov") }
+            }
+        }.start()
     }
 
     PreDestroy
@@ -40,7 +42,7 @@ public class SampleController {
 
     RequestMapping(value = array("/add"), method = array(RequestMethod.POST))
     public fun add(RequestParam("email", required = true) emailParam: String,
-                       RequestParam("fullName") fullNameParam: String): String {
+                   RequestParam("fullName") fullNameParam: String): String {
         db {
             Users attrs { all } set { values(emailParam, fullNameParam) }
         }
@@ -59,7 +61,7 @@ public class SampleController {
     RequestMapping(array("/"))
     fun index(model: Model): String {
         db {
-            model.addAttribute("users", Users attrs { all } map { email, fullName -> Pair(email, fullName)});
+            model.addAttribute("users", Users attrs { all } map { email, fullName -> Pair(email, fullName) });
         }
         return "index"
     }
